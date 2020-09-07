@@ -1,31 +1,16 @@
 {
-  "name": "to-do-list-app",
+  "name": "todo-app-complete-nodejs",
   "version": "1.0.0",
-  "description": "To Do List App using Nodejs and EJS",
+  "description": "Todo List, NodeJs Server interaction",
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/tabassum-khan/To-Do-List-App.git"
-  },
-  "keywords": [
-    "to",
-    "do",
-    "list",
-    "nodejs",
-    "ejs"
-  ],
   "author": "Tabassum Khan",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/tabassum-khan/To-Do-List-App/issues"
-  },
-  "homepage": "https://github.com/tabassum-khan/To-Do-List-App#readme",
   "dependencies": {
     "body-parser": "^1.19.0",
-    "ejs": "^3.1.5",
-    "express": "^4.17.1"
+    "express": "^4.17.1",
+    "path": "^0.12.7"
   }
 }

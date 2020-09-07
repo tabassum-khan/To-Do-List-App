@@ -8,7 +8,7 @@
     <title>TODO List</title>
     
     <!-- Custom stylesheet -->
-    <link rel='stylesheet' type='text/css' media='screen' href='style.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='styles.css'>
 
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Hind&display=swap" rel="stylesheet">
@@ -18,30 +18,37 @@
     <script src="https://kit.fontawesome.com/a81368914c.js"></script>
 
     <!--Tab icon-->
-    <link rel="icon" href="img/list.png">
+    <link rel="icon" type="image/png" href="img/list.png">
 
 </head>
 <body>
 
     <div class="container">
+        
         <h1><span class="title">Todo</span>List</h1>
 
-        <div class="inputDiv">
-            <input type="text" class="input" placeholder="What Do You Want to Do...">
-            <button class="add"><i class="fa fa-plus" aria-hidden="true"></i></button>
-        </div>
+        <form id="todoForm">
+            <input type="text" class="input" name="input" placeholder="What Do You Want to Do..." autocomplete="off" required>
+            <button class="add" type="submit"><i class="fa fa-plus" aria-hidden="true"></i></button>
+        </form>
 
         <div class="list"></div>
+
+        <ul class="panel">
+            <li id="active_item">0 items pending</li>
+            <li id="all">All<li>
+            <li id="active" class="active">Active</li>
+            <li id="completed">Completed</li>
+        </ul>
+
     </div>
 
 
     <div class="footer">
-        <div>
-            <span class="text">Icons made by </span>
-            <a class="link" href="https://www.flaticon.com/authors/dinosoftlabs" title="DinosoftLabs">DinosoftLabs</a> 
-            <span class="text"> from </span>
-            <a class="link" href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a>
-        </div>
+        <span class="text">Icons made by </span>
+        <a class="link" href="https://www.flaticon.com/authors/dinosoftlabs" title="DinosoftLabs">DinosoftLabs</a> 
+        <span class="text"> from </span>
+        <a class="link" href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a>
     </div>
 
 

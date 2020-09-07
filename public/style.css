@@ -21,7 +21,7 @@ h1 {
 
 .title{
 	color: lime;
-	text-transform: uppercase;
+	/* text-transform: uppercase; */
 	font-weight: 800;
 }
 
@@ -51,7 +51,7 @@ h1 {
 	outline: none;
     border: none;
     height: 50px;
-    border-radius: 25px;
+    border-radius: 50%;
     width: 50px;
     background-color: lime;
     color: white;
@@ -147,6 +147,12 @@ h1 {
 		font-size: 0.95rem;
 		padding-left: 1rem;
 		margin-left: 0.8rem;
+	}
+
+	.add{
+		height: 40px;
+		/* width: 35px; */
+		margin-right: 0.8rem;
 	}
 
 	.item{

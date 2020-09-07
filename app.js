@@ -1,16 +1,14 @@
 const express = require("express");
+const todoController = require("./controllers/todoController.js");
 
 const app = express();
 
-// Static Files
-app.use(express.static("./public"));
+//server static files
+app.use(express.static("public"));
 
-app.set("view engine", "ejs");
+//fire controllers
+todoController(app);
 
-app.get("/", function(req, res){
-    res.render("index");
-})
+const PORT = 3000;
 
-const PORT = process.env.PORT || 3000;
-
-let server = app.listen(PORT, () => console.log("Server is running on port " + PORT));
+app.listen(PORT, () => console.log("Server is running on port " + PORT));
